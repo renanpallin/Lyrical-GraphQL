@@ -1,6 +1,7 @@
 import React from 'react';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
+import { Link } from 'react-router';
 
 class SongCreate extends React.Component {
 	constructor(props) {
@@ -20,6 +21,7 @@ class SongCreate extends React.Component {
 	render() {
 		return (
 			<div>
+				<Link to="/">Back</Link>
 				<h3>Create a new song</h3>
 				<form onSubmit={e => this.onSubmit(e)}>
 					<label>Song Title:</label>
