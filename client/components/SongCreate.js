@@ -18,6 +18,10 @@ class SongCreate extends React.Component {
 		this.props
 			.mutate({
 				variables: { title: this.state.title },
+				/*
+				Usamos quando queremos rodar uma query novamente que NÃO está no nosso componente.
+				Caso queria fazer o fetch novamente de algo acessível por this.props.data, utilize this.props.data.refetch(), como em SongList.js
+				 */
 				refetchQueries: [
 					{
 						query,

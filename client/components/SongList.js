@@ -14,6 +14,14 @@ class SongList extends React.Component {
 					id,
 				},
 			})
+			/*
+			Quando queremos fazer um reload do componente,
+			rodando a mesma query que traz os dados que
+			ele utiliza com this.props.data, podemos
+			utilizar this.props.data.refetch() em vez de
+			manualmente rodar as queries com o refetchQueries
+			no mutate, como em SongCreate.js
+			 */
 			.then(() => this.props.data.refetch());
 	}
 
