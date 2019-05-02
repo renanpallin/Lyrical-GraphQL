@@ -16,11 +16,14 @@ class LyricList extends React.Component {
 			return (
 				<li key={lyric.id} className="collection-item">
 					{lyric.content}
-					<i
-						className="material-icons"
-						onClick={e => this.onLike(lyric.id)}>
-						thumb_up
-					</i>
+					<div className="vote-box">
+						<i
+							className="material-icons"
+							onClick={e => this.onLike(lyric.id)}>
+							thumb_up
+						</i>
+						{lyric.likes}
+					</div>
 				</li>
 			);
 		});
