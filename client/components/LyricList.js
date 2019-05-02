@@ -9,7 +9,7 @@ class LyricList extends React.Component {
 				id,
 			},
 			/*
-			Optimistic Update
+			Opitimistic Update
 			Aqui podemos sugerir um retorno, para que
 			a UI seja atualizada mais rapidamente
 			 */
